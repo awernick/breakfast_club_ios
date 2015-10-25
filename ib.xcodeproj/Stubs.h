@@ -14,13 +14,21 @@
 @interface UniversityDataSource: NSObject
 -(IBAction) init;
 -(IBAction) itemAtIndexPath:(id) index_path;
+-(IBAction) filter_by_name:(id) text;
 
 @end
 
 @interface LoginViewController: UIViewController
 
+@property IBOutlet UITextField * first_name_field;
+@property IBOutlet UITextField * last_name_field;
 @property IBOutlet UITextField * email_field;
 @property IBOutlet UITextField * password_field;
+@property IBOutlet UITextField * university_field;
+
+-(IBAction) initWithUniversity:(id) university;
+-(IBAction) login;
+-(IBAction) signup;
 
 @end
 

@@ -14,6 +14,11 @@ class UniversitySearchViewController < UIViewController
 
   def tableView(table_view, didSelectRowAtIndexPath: index_path)
     # Save user selection, and ask for sign up
+    university = @uni_dao.itemAtIndexPath(index_path)
+    login_modal = LoginViewController.alloc.initWithUniversity(university)
+    presentViewController(login_modal, animated: true, completion: ->{
+      self.popViewControllerAnimated(true) 
+    })
   end
 
   def tableView(table_view, numberOfRowsInSection: section)
