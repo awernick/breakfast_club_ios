@@ -16,6 +16,7 @@ Motion::Project::App.setup do |app|
   
   IB::RakeTask.new do |project|
   end
+  app.info_plist['NSAppTransportSecurity'] = { 'NSAllowsArbitraryLoads' => true }
 end
 
 desc "Run simulator on iPhone"

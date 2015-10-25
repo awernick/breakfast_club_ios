@@ -11,12 +11,27 @@
 @interface AppDelegate: UIResponder <UIApplicationDelegate>
 @end
 
+@interface UniversityDataSource: NSObject
+-(IBAction) init;
+-(IBAction) itemAtIndexPath:(id) index_path;
+
+@end
+
 @interface LoginViewController: UIViewController
 
 @property IBOutlet UITextField * email_field;
 @property IBOutlet UITextField * password_field;
 
+@end
+
+@interface UniversitySearchViewController: UIViewController
+
+@property IBOutlet UISearchBar * search_bar;
+@property IBOutlet UISearchDisplayController * search_controller;
+@property IBOutlet UITableView * table_view;
+
 -(IBAction) viewDidLoad;
+-(IBAction) numberOfSectionsInTableView:(id) tableView;
 
 @end
 

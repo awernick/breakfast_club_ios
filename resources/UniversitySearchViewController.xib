@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UniversitySearchViewController">
+            <connections>
+                <outlet property="search_bar" destination="WHG-LZ-zrc" id="2v7-dq-Mav"/>
+                <outlet property="table_view" destination="gyw-Gm-cwk" id="ftu-v1-bha"/>
+                <outlet property="view" destination="iN0-l3-epB" id="br6-b9-0WV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Stanford, Carnegie Mellon, ..." translatesAutoresizingMaskIntoConstraints="NO" id="WHG-LZ-zrc">
+                    <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                    <animations/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gyw-Gm-cwk">
+                    <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Vim-Vg-Tik"/>
+                        <outlet property="delegate" destination="-1" id="qa0-Wo-VcB"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gyw-Gm-cwk" secondAttribute="bottom" id="89y-Wd-eCC"/>
+                <constraint firstItem="WHG-LZ-zrc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Bbx-Hl-fLF"/>
+                <constraint firstItem="gyw-Gm-cwk" firstAttribute="top" secondItem="WHG-LZ-zrc" secondAttribute="bottom" id="Bz2-OB-Q67"/>
+                <constraint firstAttribute="trailing" secondItem="WHG-LZ-zrc" secondAttribute="trailing" id="EnY-il-tK7"/>
+                <constraint firstAttribute="trailing" secondItem="gyw-Gm-cwk" secondAttribute="trailing" id="TcK-3S-OBk"/>
+                <constraint firstItem="gyw-Gm-cwk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lwa-1i-Lk9"/>
+                <constraint firstItem="WHG-LZ-zrc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wXj-4A-EQG"/>
+                <constraint firstItem="WHG-LZ-zrc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wY7-wN-iDf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+</document>
