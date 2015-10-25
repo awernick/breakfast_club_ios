@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="CpF-Il-gQt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pUl-la-99f">
+                    <rect key="frame" x="36" y="144" width="342" height="45"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="e81-EP-dkI"/>
+                    </constraints>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfH-km-gLA">
+                    <rect key="frame" x="36" y="189" width="342" height="45"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0001196340158968745" green="0.57030725119776871" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwj-JN-oeP">
+                    <rect key="frame" x="36" y="100" width="342" height="45"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="8g8-av-NHZ"/>
+                    </constraints>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.396078431372549" green="0.96078431372549022" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="pwj-JN-oeP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="2Pq-85-ttv"/>
+                <constraint firstItem="pfH-km-gLA" firstAttribute="centerX" secondItem="pUl-la-99f" secondAttribute="centerX" id="9ES-XD-VVl"/>
+                <constraint firstItem="pfH-km-gLA" firstAttribute="width" secondItem="pUl-la-99f" secondAttribute="width" id="CiA-N2-55q"/>
+                <constraint firstItem="pUl-la-99f" firstAttribute="height" secondItem="pwj-JN-oeP" secondAttribute="height" id="EUw-4m-gun"/>
+                <constraint firstItem="pUl-la-99f" firstAttribute="width" secondItem="pwj-JN-oeP" secondAttribute="width" id="Iwr-eI-kbC"/>
+                <constraint firstAttribute="trailing" secondItem="pwj-JN-oeP" secondAttribute="trailing" constant="36" id="KxT-zw-px8"/>
+                <constraint firstAttribute="trailing" secondItem="pUl-la-99f" secondAttribute="trailing" constant="36" id="Lek-Wf-w4M"/>
+                <constraint firstItem="pfH-km-gLA" firstAttribute="height" secondItem="pUl-la-99f" secondAttribute="height" id="MxE-1g-YD2"/>
+                <constraint firstAttribute="trailing" secondItem="pfH-km-gLA" secondAttribute="trailing" constant="36" id="QgO-Oz-Ufp"/>
+                <constraint firstItem="pwj-JN-oeP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RTC-3V-2qp"/>
+                <constraint firstAttribute="trailing" secondItem="pUl-la-99f" secondAttribute="trailing" constant="36" id="WkB-PM-GJD"/>
+                <constraint firstItem="pUl-la-99f" firstAttribute="top" secondItem="pwj-JN-oeP" secondAttribute="bottom" constant="-1" id="WuA-Nz-Tqu"/>
+                <constraint firstItem="pfH-km-gLA" firstAttribute="top" secondItem="pUl-la-99f" secondAttribute="bottom" id="b8S-Z1-XL0"/>
+                <constraint firstItem="pUl-la-99f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="cqb-GV-Tuc"/>
+                <constraint firstItem="pUl-la-99f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="faW-ND-MbK"/>
+                <constraint firstItem="pwj-JN-oeP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="ruL-5a-8ce"/>
+                <constraint firstItem="pwj-JN-oeP" firstAttribute="top" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" multiplier="1.5" constant="100" id="sn1-7f-V9G"/>
+                <constraint firstItem="pfH-km-gLA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="ujC-Ha-bil"/>
+                <constraint firstAttribute="trailing" secondItem="pwj-JN-oeP" secondAttribute="trailing" constant="36" id="zra-3p-pld"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+</document>

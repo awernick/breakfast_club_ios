@@ -1,0 +1,3 @@
+class UniversitySearchViewController < UIViewController
+
+end
